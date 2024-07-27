@@ -2,82 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Advanced Search</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        .search-bar {
-            margin-top: 100px;
-        }
-        .search-bar input[type="text"] {
-            width: 300px;
-            height: 30px;
-            border-radius: 15px;
-            border: 1px solid #dfe1e5;
-            padding: 0 10px;
-        }
-        .search-bar input[type="submit"] {
-            height: 36px;
-            border: none;
-            background-color: #1a73e8;
-            color: white;
-            border: 1px solid #dfe1e5;
-            margin-left: 5px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .nav-links {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-        .nav-links a {
-            margin-left: 10px;
-        }
-        .advanced-search form {
-            display: inline-block;
-            text-align: left;
-        }
-        .advanced-search div {
-            margin-bottom: 10px;
-        }
-        .advanced-search label {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="nav-links">
+    <div class="top-right-links">
         <a href="index.html">Google Search</a>
-        <a href="images.html">Image Search</a>
     </div>
-    <div class="search-bar advanced-search">
-        <form action="https://www.google.com/search">
-            <div>
-                <label>Find pages with…</label>
-            </div>
-            <div>
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="get">
+            <div class="advanced-field">
+                <p class="top-field">Find pages with… </p>
                 <label>all these words:</label>
-                <input type="text" name="as_q">
+                <input type="text" name="as_q" class="search-bar">
             </div>
-            <div>
+            <div class="advanced-field">
                 <label>this exact word or phrase:</label>
-                <input type="text" name="as_epq">
+                <input type="text" name="as_epq" class="search-bar">
             </div>
-            <div>
+            <div class="advanced-field">
                 <label>any of these words:</label>
-                <input type="text" name="as_oq">
+                <input type="text" name="as_oq" class="search-bar">
             </div>
-            <div>
+            <div class="advanced-field">
                 <label>none of these words:</label>
-                <input type="text" name="as_eq">
+                <input type="text" name="as_eq" class="search-bar">
             </div>
-            <div>
-                <input type="submit" value="Advanced Search">
-            </div>
+            <input type="submit" value="Advanced Search" class="search-button advanced-button">
         </form>
     </div>
 </body>
 </html>
+
